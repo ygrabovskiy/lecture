@@ -30,6 +30,7 @@ function addMessage() {
             if (result === 'ok') {
                 $("#text").val('');
                 $('.feed').empty();
+                $('.hashtags').empty();
                 $('#loadMore').show();
                 loadMore();
             } else {
@@ -60,6 +61,7 @@ function loadMore() {
 
     $.post('/api/getHashtags', params)
         .done(function (data) {
+
             JSON.parse(data).forEach(function (tag) {
                 $(".hashtags").append(markupHashtag(tag));
             });

@@ -34,6 +34,7 @@
                             <input type="button" class="btn btn-primary" value="Tweet!" onclick="addMessage();" />
                     </div>
                 </div>
+                <h3>Feed</h3>
                 <div class="feed"></div>
                 <h3>Hashtags</h3>
                 <div class="hashtags"></div>
